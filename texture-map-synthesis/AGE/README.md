@@ -17,27 +17,6 @@ bash download_pretrained.sh
 
 3) Run `jupyter notebook` and go through `evaluate.ipynb`.
 
-Here is an example of samples and reconstructions for `imagenet`, `celeba` and `cifar10` datasets generated with `evaluate.ipynb`.
-
-#### Celeba
-
-|Samples    |Reconstructions|
-|:---------:|:-------------:|
-|![](data/readme_pics/celeba_samples.png) | ![](data/readme_pics/celeba_reconstructions.png) |
-
-#### Cifar10
-
-|Samples    |Reconstructions|
-|:---------:|:-------------:|
-|![](data/readme_pics/cifar10_samples.png) | ![](data/readme_pics/cifar10_reconstructions.png) |
-
-#### Tiny ImageNet
-
-|Samples    |Reconstructions|
-|:---------:|:-------------:|
-|![](data/readme_pics/imagenet_samples.png) | ![](data/readme_pics/imagenet_reconstructions.png) |
-
-
 # Training
 
 Use `age.py` script to train a model. Here are the most important parameters:
