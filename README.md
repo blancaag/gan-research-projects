@@ -24,17 +24,5 @@ Additional folders include:
 
 ### How do I get set up? ###
 
-* For replicating the environment use the corresponding image in the dockerfiles folders (cuda 8.0 or cuda 9.0)
-* Config
-* Dependencies
+For replicating the environment use the corresponding image in the dockerfiles folders (cuda 8.0 or cuda 9.0) in ```resources/dockerfiles```.
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
