@@ -1,0 +1,43 @@
+FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+
+RUN apt-get update && apt-get install -y rsync htop git openssh-server python-pip
+
+RUN pip install --upgrade pip
+
+RUN pip install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp27-cp27mu-manylinux1_x86_64.whl
+RUN pip install torchvision cffi tensorboardX
+
+RUN pip install tqdm scipy scikit-image colorama==0.3.7
+RUN pip install setproctitle pytz ipython
+
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+# RUN apt-get install apt-utils -y --no-install-recommends
+RUN apt-get install dialog apt-utils -y
+
+RUN apt-get install software-properties-common python-software-properties -y
+RUN add-apt-repository ppa:jonathonf/gcc-7.1
+RUN apt-get update
+RUN apt-get install gcc-7 g++-7 -y
+
+RUN pip install cmake
+RUN pip install opencv-python
+
+RUN CC=`which gcc-7` CXX=`which g++-7` pip install eos-py
+
+RUN apt-get update && apt install -y libsm6 libxext6
+RUN apt-get install -y libxrender-dev
+
+ENV PATH="/root/miniconda3/bin:${PATH}"
+
+RUN apt-get update \
+            && apt-get clean \
+            && apt-get autoremove \
+            && rm -rf /var/lib/apt/lists/* \
+            && cd /tmp \
+            && mkdir -p /tmp/miniconda \
+            && wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -P /tmp/miniconda
+
+RUN bash /tmp/miniconda/Miniconda3-latest-Linux-x86_64.sh -b
+RUN rm -rf /tmp/miniconda
+RUN export PATH
+RUN conda clean --all -y

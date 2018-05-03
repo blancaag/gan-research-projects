@@ -1,0 +1,98 @@
+#FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+
+FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
+
+#ARG repository
+#FROM ${repository}:9.1-devel-ubuntu16.04
+#LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
+
+#ENV CUDNN_VERSION 7.0.5.15
+#LABEL com.nvidia.cudnn.version="${CUDNN_VERSION}"
+
+#RUN apt-get update && apt-get install -y --no-install-recommends \
+#            libcudnn7=$CUDNN_VERSION-1+cuda9.1 \
+#            libcudnn7-dev=$CUDNN_VERSION-1+cuda9.1 && \
+#    rm -rf /var/lib/apt/lists/*
+
+
+
+RUN apt-get update && apt-get install -y rsync htop git openssh-server python-pip
+
+#RUN pip install --upgrade pip
+#RUN pip install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp27-cp27mu-manylinux1_x86_64.whl
+#RUN pip install torchvision cffi tensorboardX
+#RUN pip install tqdm scipy scikit-image colorama==0.3.7
+#RUN pip install setproctitle pytz ipython
+
+# check below with rafa:
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+# RUN apt-get install apt-utils -y --no-install-recommends
+RUN apt-get install dialog apt-utils -y
+
+# RUN pip install opencv-python
+# RUN CC=`which gcc-7` CXX=`which g++-7` pip install eos-py
+
+RUN apt-get update \
+	&& apt-get install -y software-properties-common python-software-properties \
+	&& add-apt-repository ppa:jonathonf/gcc-7.1 \
+	&& apt-get update && apt-get install -y gcc-7 g++-7 \
+	&& apt install -y libsm6 libxext6 \
+	&& apt-get install -y libxrender-dev \
+	&& apt-get install -y libgtk2.0-dev
+
+#RUN && apt-get install libgl1-mesa-glx
+
+## ———install miniconda——- ##
+
+ENV PATH="/root/miniconda3/bin:${PATH}"
+RUN apt-get update \
+            && apt-get clean \
+            && apt-get autoremove \
+            && rm -rf /var/lib/apt/lists/* \
+            && cd /tmp \
+            && mkdir -p /tmp/miniconda \
+            && wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -P /tmp/miniconda | wc -l > /number
+
+RUN bash /tmp/miniconda/Miniconda3-latest-Linux-x86_64.sh -b
+RUN rm -rf /tmp/miniconda
+RUN conda clean -all
+RUN export PATH
+# ADD ./conda-envs/p2v2.txt .
+# RUN conda create --name eos --file p2v2.txt
+
+RUN conda install -c menpo opencv3
+RUN conda install -c menpo dlib
+
+RUN pip install --upgrade pip
+RUN pip install cmake
+
+## ———install eos:patrickhuber——- ##
+
+RUN CC=`which gcc-7` CXX=`which g++-7` pip install eos-py
+
+## ———setting python & jupyter——- ##
+
+# https://stackoverflow.com/questions/32373632/stop-python3-creating-module-cache-in-system-directory
+RUN export PYTHONDONTWRITEBYTECODE="nocache"
+#RUN export PYTHONDONTWRITEBYTECODE=1
+RUN conda install jupyter
+RUN conda install ipykernel
+RUN python -m ipykernel install --user
+
+## ——-install pytorch & torchvision——- ##
+#RUN conda install pytorch torchvision -c pytorch
+RUN conda install pytorch torchvision cuda90 -c pytorch
+RUN conda install scipy
+RUN conda install matplotlib
+RUN conda install bcolz
+RUN conda install scikit-image
+RUN conda install scikit-learn
+
+RUN conda install av -c conda-forge
+RUN pip install visdom
+RUN pip install dominate
+
+RUN conda install tensorflow
+
+EXPOSE 9000-9999
+

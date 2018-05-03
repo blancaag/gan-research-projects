@@ -1,0 +1,20 @@
+------------ Options -------------
+batch_size: 32
+beta1: 0.9
+beta2: 0.999
+checkpoint: None
+checkpoint_dir: checkpoints_densenet_test
+data_dir: /blanca/training_datasets/p2p/output_pairs_clean_class
+gpu_ids: [0]
+lr: 0.001
+lr_decay: 50
+name: test_clean
+nc_input: 4
+nepochs: 50
+nworkers: 64
+optimizer: adam
+phase: train
+phases: ['train', 'val']
+target_size: (224, 224)
+type: fromSub
+-------------- End ----------------

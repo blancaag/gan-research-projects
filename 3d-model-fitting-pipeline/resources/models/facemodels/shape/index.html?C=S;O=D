@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /faceweb/3dmm/facemodels/shape</title>
+ </head>
+ <body>
+<h1>Index of /faceweb/3dmm/facemodels/shape</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/faceweb/3dmm/facemodels/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sfm_shape_29587.scm">sfm_shape_29587.scm</a></td><td align="right">26-Jan-2017 13:06  </td><td align="right"> 39M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sfm_shape_16759.scm">sfm_shape_16759.scm</a></td><td align="right">26-Jan-2017 13:00  </td><td align="right"> 22M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sfm_shape_3448.scm">sfm_shape_3448.scm</a></td><td align="right">26-Jan-2017 13:05  </td><td align="right">5.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sfm_shape_1724.scm">sfm_shape_1724.scm</a></td><td align="right">26-Jan-2017 13:05  </td><td align="right">2.4M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/layout.gif" alt="[   ]"></td><td><a href="sfm_file_types.pdf">sfm_file_types.pdf</a></td><td align="right">26-May-2017 16:16  </td><td align="right">746K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="sfm.py">sfm.py</a></td><td align="right">26-Jan-2017 13:12  </td><td align="right">2.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="LICENSE.txt">LICENSE.txt</a></td><td align="right">26-Jan-2017 10:48  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="errata.txt">errata.txt</a></td><td align="right">26-Jan-2017 11:13  </td><td align="right">337 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="regions/">regions/</a></td><td align="right">26-May-2017 16:16  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="expression/">expression/</a></td><td align="right">29-Aug-2017 15:14  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="eos/">eos/</a></td><td align="right">29-Aug-2017 15:14  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.22 (Ubuntu) Server at www.cvssp.org Port 80</address>
+</body></html>

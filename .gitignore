@@ -1,0 +1,9 @@
+*.pth
+*.pt
+*.pth.tar
+checkpoints
+output
+__pycache__
+results
+training
+training/

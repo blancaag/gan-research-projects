@@ -1,0 +1,9 @@
+
+Expression blend shape for the 16759 shape model
+---
+The expression blendshapes for the 16759 model (expression_blendshapes_16759.bin) seem to produce
+faulty shapes, see: https://github.com/patrikhuber/4dface/issues/12. Until the issue has been fixed
+users are advised not to use this particular file.
+
+All other blendshapes are fine.
+

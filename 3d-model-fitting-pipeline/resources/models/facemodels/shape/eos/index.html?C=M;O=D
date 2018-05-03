@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /faceweb/3dmm/facemodels/shape/eos</title>
+ </head>
+ <body>
+<h1>Index of /faceweb/3dmm/facemodels/shape/eos</h1>
+<table><tr><th><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr><tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[DIR]"></td><td><a href="/faceweb/3dmm/facemodels/shape/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="pre-v0.12.0/">pre-v0.12.0/</a></td><td align="right">09-Mar-2017 15:43  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/binary.gif" alt="[   ]"></td><td><a href="sfm_shape_29587.bin">sfm_shape_29587.bin</a></td><td align="right">09-Mar-2017 11:40  </td><td align="right"> 20M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/binary.gif" alt="[   ]"></td><td><a href="sfm_shape_16759.bin">sfm_shape_16759.bin</a></td><td align="right">09-Mar-2017 11:40  </td><td align="right"> 11M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/binary.gif" alt="[   ]"></td><td><a href="sfm_shape_3448.bin">sfm_shape_3448.bin</a></td><td align="right">09-Mar-2017 11:40  </td><td align="right">2.7M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/binary.gif" alt="[   ]"></td><td><a href="sfm_shape_1724.bin">sfm_shape_1724.bin</a></td><td align="right">09-Mar-2017 11:40  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sfm_29587_edge_topology.json">sfm_29587_edge_topology.json</a></td><td align="right">26-Jan-2017 10:48  </td><td align="right"> 16M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sfm_16759_edge_topology.json">sfm_16759_edge_topology.json</a></td><td align="right">26-Jan-2017 10:48  </td><td align="right">9.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sfm_3448_edge_topology.json">sfm_3448_edge_topology.json</a></td><td align="right">26-Jan-2017 10:48  </td><td align="right">1.9M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sfm_1724_edge_topology.json">sfm_1724_edge_topology.json</a></td><td align="right">26-Jan-2017 10:48  </td><td align="right">943K</td><td>&nbsp;</td></tr>
+<tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.2.22 (Ubuntu) Server at www.cvssp.org Port 80</address>
+</body></html>
