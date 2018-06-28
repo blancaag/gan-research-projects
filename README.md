@@ -2,7 +2,7 @@
 
 The followin repository containes the work reference in the blog post:
 
-https://docs.google.com/document/d/12yq5sXpLaYZsMe14L5_AMOZOEvwfEXAszULBCniXFP8/edit#
+https://drive.google.com/open?id=1UU7B8_BHsDDTweno9AhwY_qdyGuLA6Up
 
 The two main sub-projects are:
 
