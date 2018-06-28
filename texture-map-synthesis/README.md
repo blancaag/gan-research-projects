@@ -1,4 +1,4 @@
-# README #
+# GAN models for synthesising texture map images #
 
 The following repository contains the work referenced in the blog post:
 
