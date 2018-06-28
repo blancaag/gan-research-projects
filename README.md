@@ -1,4 +1,4 @@
-# README #
+# Research projects on GANs for Data Augemtation of face texture maps images #
 
 The followin repository containes the work reference in the blog post:
 
